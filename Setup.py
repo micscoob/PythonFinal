@@ -24,7 +24,7 @@ def flags(tot_flags):
         Flag_Terms[tmp_flagname] = tmp_term
 ##HTML File is created in the same directory as your program is runned from.
 def createhtml():
-    f = open('helloworld.html','w')
+    f = open('scorepage.html','w')
     start =("""
                 <html>
                 <head></head>
