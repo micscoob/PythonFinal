@@ -1,3 +1,4 @@
+import pickle #imports pickle module
 Flag_Values = {}
 Flag_Terms = {}
 Team_Names =[]
@@ -42,5 +43,11 @@ def createhtml():
 teamname(Total_Teams)
 flags(Total_flags)
 createhtml()
-
+#does pickle stuff
+pickle_out = open('values.pickle','wb')#creates file called valuels.pickle
+pickle.dump (Flag_Values, pickle_out)#inserts flag values to the file
+pickle_out.close()#closes the file
+pickle_out = open('terms.pickle','wb')
+pickle.dump (Flag_Terms, pickle_out)
+pickle_out.close()
 #Also how to store our dictonry so we can use it in the other programs.
