@@ -17,18 +17,30 @@ def teamname(Total):
 def flags(tot_flags):
     for i in range(tot_flags):
         i += 1
-        tmp_flagname = input('What will flag%d be called?\n' %i)
+        tmp_flagname = ('flag%d' % i)
         tmp_term = input('What is the term for  %s??\n' % tmp_flagname)
         tmp_value = input('What is the Value of  %s?\n'% tmp_flagname)
         Flag_Values[tmp_flagname] = tmp_value
         Flag_Terms[tmp_flagname] = tmp_term
-
+##HTML File is created in the same directory as your program is runned from.
+def createhtml():
+    f = open('helloworld.html','w')
+    start =("""
+                <html>
+                <head></head>
+                <body>""")
+    end = ( """</body> </html>""")
+    f.write(start)
+    for i in Team_Names:
+        middle = ("""<p>%s points are <p>
+            <a href="/python.py/">Click here to enter your points</a>
+                            """ %i)
+        f.write(middle)
+    f.write(end)
+        
 #This is just testing it
 teamname(Total_Teams)
-flags(Total_flags) 
-print(Flag_Values)
-print(Flag_Terms)
-print(Team_Names)
+flags(Total_flags)
+createhtml()
 
-#We need to figure out how to out put our team list to an html file
 #Also how to store our dictonry so we can use it in the other programs.
