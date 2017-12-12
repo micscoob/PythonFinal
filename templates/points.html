@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>   
+</head>
+   <style type="text/css" media="screen">
+       header{
+        color: darkred;
+        padding: 5px 30px 5px 0px;
+        width: 20%;
+        background-color:lightblue;
+        background-size: 50%;
+        text-align: left;}
+       
+      body{
+            background-color: beige;
+        }
+      #setup{
+         color: darkgreen; 
+        text-align: center;
+          background-color: lightblue;
+      }
+         
+    
+      #flagname{
+          padding: 5px;
+          margin: 5px;
+      }
+      #flagvalue{
+          padding: 5px;
+          margin: 5px;
+      }
+      #Teamname{
+          padding: 5px;
+          margin: 5px;
+      }
+      #submit {
+          color: green;
+      }
+       nav{
+        padding: 5px 30px 5px 0px;
+        width: 20%;
+        background-color:lightblue;
+        text-align: left;}
+        
+        nav ul li {
+            display: inline;
+            list-style-type: none;}
+    
+        nav li a {
+            padding: 0.25em;
+            color: darkred;
+            font-weight: bold;
+            text-decoration: none;}
+    
+        nav li a:hover {
+            color: black;
+            background-color: goldenrod;}
+ </style>
+<body>
+
+ <div >
+     <header>
+     <h1>Enter Flag</h1>
+     </header>
+    
+        <form method ="post">
+            
+        <div id="Teamname">
+        <label for="flagpoints">Teamname</label>    
+        <input type="text" name="Teamname" id="Teamname" placeholder="Team1"></div>
+            
+            
+        <div id="flagname">  
+        <label for="flagName">FlagName:</label>
+        <input type="text" name="flag" id="flagname" placeholder="Flag1">
+        </div>   
+            
+        <div id= flagvalue><label for="flagvalue">FlagValue:</label> 
+        <input type="text" name="flagvalue" id="flagvalue" placeholder="goodjobonflag1"></div>
+         
+        
+    <input type="submit" value="Submit" 
+         name="Submit" id="frm1_submit" />
+
+      </form>
+      </div>
+<p>{{text}}</p>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a>
+                    </li>
+                    <li><a href="/About">About</a>
+                    </li>
+                </ul>
+            </nav>
+</body>
+ 
+</html>

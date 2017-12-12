@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>   
+</head>
+  <style type="text/css" media="screen">
+      body{
+            background-color: beige;
+        }
+      #setup{
+          width: 50%;
+          margin-left: 20%;
+         color: darkgreen; 
+        text-align: center;
+          background-color: lightblue;
+      }
+      #Teamname{
+          padding: 5pxpx;
+         
+      }
+      #Flagname{
+          padding: 5px;
+          margin: 5px;
+      }
+      #Flagvalue{
+          padding: 5px;
+          margin: 5px;
+      }
+      #Flagpoints{
+          padding: 5px;
+          margin: 5px;
+      }
+      #submit {
+          color: green;
+      }
+       nav{
+        background-color: lightblue;
+        text-align: center;
+        width: 50%;
+        margin-left: 20%;
+      }
+        
+        nav ul li {
+            display: inline;
+            list-style-type: none;}
+    
+        nav li a {
+            padding: 0.25em;
+            color: darkred;
+            font-weight: bold;
+            text-decoration: none;}
+    
+        nav li a:hover {
+            color: black;
+            background-color: goldenrod;}
+ </style>
+<body>
+
+ <div id="setup">
+     <h1>{{text}}</h1>
+     
+        <form method ="post">
+        <label id="Teamname" for="teamname">TeamName:</label>
+            
+        <input type="text" name="team_name" id="teamname" placeholder="Enter a Teams name." size="15">    
+            
+        <div  id="Flagname">
+            <label for="flagName">FlagName:</label>
+            
+            <input type="text" name="flag" id="flagname" placeholder="Flag1" size="10">
+        </div>
+            
+        <div  id="Flagvalue">
+            
+            <label for="flagvalue">FlagValue:</label>
+            
+            <input type="text" name="flagvalue" id="flagvalue" placeholder="goodjobonflag"size="35">
+            
+        </div>
+         
+            <div  id="Flagpoints" >
+                <label for="flagpoints">FlagPoints</label>
+            
+                <input type="text" name="flagpoints" id="flagpoints" placeholder="45" size="3">
+            </div>
+        
+         
+        <button id="submit" type="submit">Submit</button>
+      </form>
+      </div>
+<nav>
+                <ul>
+                    <li><a href="/">Home</a>
+                    </li>
+                    <li><a href="/About">About</a>
+                    </li>
+                </ul>
+            </nav>
+</body>
+ 
+</html>

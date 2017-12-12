@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head> 
+   <style>
+    nav{
+        padding: 5px 30px 5px 0px;
+        background-color: lightblue;
+        text-align: center;}
+        
+        nav ul li {
+            display: inline;
+            list-style-type: none;}
+    
+        nav li a {
+            padding: 0.25em;
+            color: darkred;
+            font-weight: bold;
+            text-decoration: none;}
+    
+        nav li a:hover {
+            color: black;
+            background-color: goldenrod;}
+       body{
+            background-color: beige;
+        }
+    </style>
+</head>
+ 
+<body>
+<nav>
+    <ul>
+        <li role="presentation" class="active"><a href="/">Home</a>
+        </li>
+        <li role="presentation"><a href="/">Setup</a>
+        </li>
+        <li role="presentation"><a href="/About">About</a>
+        </li>
+    </ul>
+ </nav>
+    
+    <form action="/email" method="get">
+    <input type="submit" value="Email Scores" 
+         name="Submit" id="frm1_submit" />
+</form>
+    
+<p>{{text}}</p>
+<p>{{Flag_dic}}</p>
+<p>{{Team_dic}}</p>
+<p>{{team_names}}</p>
+<p>{{email}}</p>
+<footer class="footer">
+            <p>&copy; MK and RV 2017</p>
+        </footer>
+</body>
+ 
+</html>

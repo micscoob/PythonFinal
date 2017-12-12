@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Capture the Flag Score Bot</title>
+    
+    <style type="text/css" media="screen">
+        
+ @import url(https://fonts.googleapis.com/css?family=Arvo:700);
+        body{
+            background-color: beige;
+        }
+     #container {
+        width: 90%;
+        margin: 10px auto;
+        border: 2px solid black;
+        background-color: gray;}
+    
+     header {
+        text-align: center;
+        width: 50%;
+         margin-left: 25%;
+        font-family: Arvo;
+        font-weight: bold;
+        background-color: lightblue;}
+        
+     nav{
+        padding: 5px 30px 5px 0px;
+        background-color: lightblue;
+        text-align: center;}
+        
+        nav ul li {
+            display: inline;
+            list-style-type: none;}
+    
+        nav li a {
+            padding: 0.25em;
+            color: darkred;
+            font-weight: bold;
+            text-decoration: none;}
+    
+        nav li a:hover {
+            color: black;
+            background-color: goldenrod;}
+        
+        #clock {
+            background-color: lightblue;}   
+        
+        #Teams{
+            color: green; 
+            background-color: lightblue;
+        width: 50%;
+         margin-left: 25%;}
+        #Teams h4{
+            border-bottom-width: thick; 
+            border-bottom-color: gray;
+            border-bottom-style:solid;
+            border-top-width: thick; 
+            border-top-color: gray;
+            border-top-style:solid;
+        }
+        
+        #button{
+            color: green;
+            text-decoration: none; }
+        
+        #button:hover{
+            color: white;
+            background-color: black; }
+      
+    </style> 
+</head>
+ 
+<body>
+    <div id="container">
+        
+        <header>
+            <h1>Capture The Flag</h1>
+            <nav>
+                <ul>
+                    <li role="presentation" class="active"><a href="/">Refresh</a>
+                    </li>
+                    <li role="presentation"><a href="Setup">Setup</a>
+                    </li>
+                    <li role="presentation"><a href="About">About</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        
+            <div id="Teams">
+                {% for key, value in Team_dic.items()%}
+                <h4>{{key}}</h4>
+                <p>{{ text }} {{value}}</p>
+                <p><a id="button" href="points" role="button">Enter a flag </a>
+                </p>
+                {%endfor%}
+                </div>
+        
+ <form action="/print" method="get">
+    <input type="submit" value="Print Scores" 
+         name="Submit" id="frm1_submit" />
+</form>
+        <footer class="footer">
+            <p>&copy; MK and RV 2017</p>
+        </footer>
+ 
+    </div> <!-- end of container -->
+</body>
+ 
+</html>
